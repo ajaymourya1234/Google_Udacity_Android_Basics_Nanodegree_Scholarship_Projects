@@ -15,8 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="@dimen/dp_8"
-            android:paddingBottom="@dimen/dp_8">
+            android:paddingTop="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_6">
 
             <ImageView
                 android:layout_width="wrap_content"
