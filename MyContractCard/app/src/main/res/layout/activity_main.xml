@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ajay.mycontractcard.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_paintbrush"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_paintbucket"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_roller"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_pencilbrush"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/photo_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/business_image" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5DB9FF"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:padding="@dimen/dp_8"
+            android:text="@string/business_name"
+            android:textColor="#01579B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_15"
+            android:autoLink="map"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="@dimen/dp_8"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:text="@string/address"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#01579B"
+            android:textColorLink="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_15"
+            android:autoLink="phone"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="@dimen/dp_8"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:text="@string/phone_no"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#01579B"
+            android:textColorLink="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_15"
+            android:autoLink="web"
+            android:drawableLeft="@drawable/ic_web"
+            android:drawablePadding="@dimen/dp_8"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:text="@string/web"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#01579B"
+            android:textColorLink="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_20"
+            android:fontFamily="monospace"
+            android:text="@string/about"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#01579B"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_6"
+            android:fontFamily="monospace"
+            android:textColor="#01579B"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
