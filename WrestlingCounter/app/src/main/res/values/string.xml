@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Wrestling Counter</string>
+    <string name="Player_1">Player 1</string>
+    <string name="Player_2">Player 2</string>
+    <string name="zero">0</string>
+    <string name="takedown">Takedown</string>
+    <string name="escape">Escape</string>
+    <string name="reversal">Reversal</string>
+    <string name="penalty">Penalty</string>
+    <string name="reset">Reset</string>
+
+</resources>

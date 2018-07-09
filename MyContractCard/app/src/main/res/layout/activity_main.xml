@@ -88,7 +88,8 @@
             android:text="@string/phone_no"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#01579B"
-            android:textColorLink="@color/colorPrimaryDark" />
+            android:textColorLink="@color/colorPrimaryDark"
+            />
 
         <TextView
             android:layout_width="match_parent"

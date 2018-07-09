@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">MyContract Card</string>
     <string name="business_name">Superior Painting</string>
-    <string name="address">1600 Amphitheatre Parkway, Mountain View, CA 94043</string>
-    <string name="phone_no">9900572671</string>
+    <string name="address"><u>1600 Amphitheatre Parkway, Mountain View, CA 94043</u></string>
+    <string name="phone_no"><u>9900572671</u></string>
     <string name="web">www.SuperiorPainting.com</string>
     <string name="about">About us</string>
     <string name="details">We undertake indoor and outdoor paintings, we have specialized men for textured paint effects and polishing of furnitures</string>
