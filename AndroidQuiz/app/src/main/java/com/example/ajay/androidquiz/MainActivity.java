@@ -4,34 +4,36 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.RadioButton;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int ans1=0;
-    private int ans2=0;
-    private int ans3=0;
-    private int correctAns = 0;
+    private int ans1 = 0;
+    private int ans2 = 0;
+    private int ans3 = 0;
+    private int ans4 = 0;
+    private int ans5 = 0;
+    private int ans6 = 0;
+    private int ans7 = 0;
+    private int ans8 = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Evaluating the question 1
+//Evaluating the question 1
         RadioGroup rg1 = (RadioGroup) findViewById(R.id.radiogroup1);
         rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if(i == R.id.q1_radiobutton4){
+                if (i == R.id.q1_radiobutton4) {
                     ans1 = 1;
-                    Log.i("1","question 1 "+ ans1);
-                    Toast.makeText(MainActivity.this,
-                            "correct", Toast.LENGTH_LONG).show();
-                }else{
+                } else {
                     ans1 = 0;
-                    Log.i("1","question 1 "+ ans1);
                 }
             }
         });
@@ -41,16 +43,11 @@ public class MainActivity extends AppCompatActivity {
         rg2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-                RadioButton checkedRadioButton = (RadioButton)radioGroup.findViewById(i);
-                if(checkedRadioButton.getId() == R.id.q2_radiobutton1){
+                if (i == R.id.q2_radiobutton1) {
                     ans2 = 1;
-                    Log.i("2","question 2 "+ ans2);
-                    Toast.makeText(MainActivity.this,
-                            "correct", Toast.LENGTH_LONG).show();
-                }else{
+
+                } else {
                     ans2 = 0;
-                    Log.i("2","question 2 "+ ans2);
                 }
             }
         });
@@ -59,22 +56,88 @@ public class MainActivity extends AppCompatActivity {
         rg3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                RadioButton checkedRadioButton = (RadioButton)radioGroup.findViewById(i);
-                if(checkedRadioButton.getId() == R.id.q3_radiobutton3){
+                if (i == R.id.q3_radiobutton3) {
                     ans3 = 1;
-                    Log.i("3","question 3 "+ ans3);
-                    Toast.makeText(MainActivity.this,
-                            "correct", Toast.LENGTH_LONG).show();
-                }else{
+
+                } else {
                     ans3 = 0;
-                    Log.i("3","question 3 "+ ans3);
                 }
             }
         });
 
+        RadioGroup rg4 = (RadioGroup) findViewById(R.id.radiogroup4);
+        rg4.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == R.id.q4_radiobutton1) {
+                    ans4 = 1;
+
+                } else {
+                    ans4 = 0;
+
+                }
+            }
+        });
+
+
     }
 
-    public void question_1(View view){
+    //Evaluating question 5
+    public void checkboxClicked_5(View view) {
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.q5_checkbox1);
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.q5_checkbox2);
+        CheckBox checkBox3 = (CheckBox) findViewById(R.id.q5_checkbox3);
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.q5_checkbox4);
+
+        if (checkBox4.isChecked() && checkBox2.isChecked() && !checkBox1.isChecked() && !checkBox3.isChecked()) {
+            ans5 = 1;
+
+        } else {
+            ans5 = 0;
+        }
+    }
+
+    //Evaluating question 5
+    public void checkboxClicked_6(View view) {
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.q6_checkbox1);
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.q6_checkbox2);
+        CheckBox checkBox3 = (CheckBox) findViewById(R.id.q6_checkbox3);
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.q6_checkbox4);
+
+        if (checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked() && !checkBox4.isChecked()) {
+            ans6 = 1;
+
+        } else {
+            ans6 = 0;
+        }
+    }
+
+    //Evaluating question 8
+    public void checkboxClicked_8(View view) {
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.q8_checkbox1);
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.q8_checkbox2);
+
+        if (!checkBox1.isChecked() && checkBox2.isChecked()) {
+            ans8 = 1;
+
+        } else {
+            ans8 = 0;
+        }
+    }
+
+    public void editTextClicked(View view) {
+
+    }
+
+    public void submit(View view) {
+
+        EditText text = (EditText) findViewById(R.id.edittext);
+        String value = text.getText().toString();
+        if (value.equalsIgnoreCase("Android")) {
+            ans7 = 1;
+
+        }
+        int result = ans1 + ans2 + ans3 + ans4 + ans5 + ans6 + ans7 + ans8;
 
     }
 }
