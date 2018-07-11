@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //variables to check whether the answer entered is correct or not
     private int ans1 = 0;
     private int ans2 = 0;
     private int ans3 = 0;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//Evaluating the question 1
+        //Evaluating the question 1
         RadioGroup rg1 = (RadioGroup) findViewById(R.id.radiogroup1);
         rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Evaluating the question 3
         RadioGroup rg3 = (RadioGroup) findViewById(R.id.radiogroup3);
         rg3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -65,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Evaluating the question 4
         RadioGroup rg4 = (RadioGroup) findViewById(R.id.radiogroup4);
         rg4.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -97,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //Evaluating question 5
+    //Evaluating question 6
     public void checkboxClicked_6(View view) {
         CheckBox checkBox1 = (CheckBox) findViewById(R.id.q6_checkbox1);
         CheckBox checkBox2 = (CheckBox) findViewById(R.id.q6_checkbox2);
@@ -125,10 +128,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void editTextClicked(View view) {
-
-    }
-
     public void submit(View view) {
 
         EditText text = (EditText) findViewById(R.id.edittext);
@@ -138,6 +137,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
         int result = ans1 + ans2 + ans3 + ans4 + ans5 + ans6 + ans7 + ans8;
+        Toast.makeText(MainActivity.this, "You have answered "+ result + " questions correctly",
+                Toast.LENGTH_LONG).show();
 
     }
 }
