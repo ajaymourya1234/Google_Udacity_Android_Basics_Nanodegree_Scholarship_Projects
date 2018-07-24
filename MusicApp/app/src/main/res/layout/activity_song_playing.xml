@@ -7,21 +7,79 @@
     android:orientation="vertical"
     tools:context="com.example.ajay.musicapp.SongPlaying">
 
+
     <ImageView
-        android:id="@+id/image_view"
+        android:id="@+id/playing_song_image"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/audio_disc_" />
 
     <TextView
-        android:id="@+id/song_name1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"/>
+        android:id="@+id/now_playing_song"
+        style="@style/TextStyle"
+        tools:text="Song Name" />
 
     <TextView
-        android:id="@+id/song_artist1"
-        android:layout_width="wrap_content"
+        android:id="@+id/playing_song_artist"
+        style="@style/TextStyle"
+        android:textStyle="normal"
+        tools:text="Song Artist" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_volume_off_black_24dp" />
+
+        <SeekBar
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_volume_up_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"/>
+        android:layout_marginTop="12dp">
+
+        <ImageView
+            android:id="@+id/icon_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_skip_previous_black_48dp" />
+
+        <ImageView
+            android:id="@+id/icon_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_play_arrow_black_48dp" />
+
+        <ImageView
+            android:id="@+id/icon_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_skip_next_black_48dp" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

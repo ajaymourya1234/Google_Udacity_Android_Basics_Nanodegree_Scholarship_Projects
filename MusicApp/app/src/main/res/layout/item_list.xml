@@ -4,14 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:orientation="horizontal"
-    android:background="#fe6847">
+    android:background="@drawable/customshape"
+    android:padding="6dp">
 
     <ImageView
         android:id="@+id/song_image"
-        android:layout_width="wrap_content"
+        android:layout_width="65dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/audio_jack"
-        android:scaleType="centerInside"/>
+        android:src="@drawable/audio_disc_"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="6dp"/>
 
     <LinearLayout
         android:id="@+id/somgInfoLayout"
@@ -45,6 +47,6 @@
         android:id="@+id/play_icon"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:src="@drawable/ic_play_arrow_black_36dp"
+        android:src="@drawable/ic_play_circle_filled_black_48dp"
         android:layout_weight="1"/>
 </LinearLayout>

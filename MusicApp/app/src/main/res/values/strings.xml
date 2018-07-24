@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Music App</string>
+    <string name="playing_song">Playing Song</string>
+
+    <string name="song_name_1">Shape of You</string>
+    <string name="artist_1">Ed Sheeran</string>
+
+    <string name="song_name_2">One Dance</string>
+    <string name="artist_2">Drake</string>
+
+    <string name="song_name_3">Closer</string>
+    <string name="artist_3">The Chainsmokers</string>
+
+    <string name="song_name_4">rockstar</string>
+    <string name="artist_4">Post Malone</string>
+
+    <string name="song_name_5">Lean On</string>
+    <string name="artist_5">Major Lazer</string>
+
+    <string name="song_name_6">Despacito</string>
+    <string name="artist_6">Louis Fonsi and Daddy Yankee</string>
+
+    <string name="song_name_7">Thinking Out</string>
+    <string name="artist_7">Ed Sheeran</string>
+
+    <string name="song_name_8">Sorry</string>
+    <string name="artist_8">Justin Bieber</string>
+
+    <string name="song_name_9">Don\'t Let Me Down</string>
+    <string name="artist_9">The Chainsmokers</string>
+
+    <string name="song_name_10">Let Me Love You</string>
+    <string name="artist_10">DJ Snake</string>
 </resources>
