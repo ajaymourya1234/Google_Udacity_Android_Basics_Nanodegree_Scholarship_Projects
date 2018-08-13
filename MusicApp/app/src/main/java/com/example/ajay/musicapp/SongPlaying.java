@@ -16,13 +16,11 @@ public class SongPlaying extends AppCompatActivity {
 
         String playingSong = "";
         String playingArtist = "";
-        String playingAlbum = "";
 
         Intent intent = getIntent();
         if (null != intent) {
             playingSong = intent.getStringExtra("KEY_SONG");
             playingArtist = intent.getStringExtra("KEY_ARTIST");
-            playingAlbum = intent.getStringExtra("KEY_ALBUM");
 
             TextView playingSongText = (TextView) findViewById(R.id.now_playing_song);
             playingSongText.setText(playingSong);

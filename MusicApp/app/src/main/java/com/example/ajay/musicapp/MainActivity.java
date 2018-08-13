@@ -17,9 +17,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private LinearLayout linearLayoutParent,linearLayoutChild;
-    private ImageView image;
-    private TextView songName,songArtist;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
