@@ -17,7 +17,8 @@ public class TechNewsAdapter extends ArrayAdapter<TechNews> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-// Check if the existing view is being reused, otherwise inflate the view
+
+        // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
@@ -35,11 +36,26 @@ public class TechNewsAdapter extends ArrayAdapter<TechNews> {
         titleTextView.setText(currentTechNews.getmNewsTitle());
 
 
-        //find the TextView in the list_item.xml layout with the ID title
+        //find the TextView in the list_item.xml layout with the ID date
         TextView dateTextView = (TextView) listItemView.findViewById(R.id.date);
-        dateTextView.setText(currentTechNews.getmDate());
-        //Get the publication date and time from the current TechNews Object
-        //set this on the TextView
+
+        String convertedDateTime = "";
+        String originalDateTime = currentTechNews.getmPublicationDate();
+        String substringDateTime = originalDateTime.substring(0, 16);
+        String convertedDateTime1 = substringDateTime.replace("-", ".");
+        convertedDateTime = convertedDateTime1.replace("T", ", ");
+
+        dateTextView.setText(convertedDateTime);
+
+        //find the TextView in the list_item.xml layout with the ID section
+        TextView sectionTextView = (TextView) listItemView.findViewById(R.id.section);
+
+        sectionTextView.setText(currentTechNews.getMsectionName());
+
+        //find the TextView in the list_item.xml layout with the ID author
+        TextView authorTextView = (TextView) listItemView.findViewById(R.id.author);
+
+        authorTextView.setText(currentTechNews.getmAuthorName());
 
         return listItemView;
 
