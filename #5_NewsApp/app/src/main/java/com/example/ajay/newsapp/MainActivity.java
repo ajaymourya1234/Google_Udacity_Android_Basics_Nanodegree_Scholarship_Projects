@@ -19,26 +19,27 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<TechNews>> {
 
-    /** TextView that is displayed when the list is empty */
-    private TextView mEmptyStateTextView;
-
     /**
      * Constant value for the earthquake loader ID. We can choose any integer.
      * This really only comes into play if you're using multiple loaders.
      */
     private static final int TECHNEWS_LOADER_ID = 1;
-
     /**
      * URL for Guardian news API
      */
-    private static final String REQUEST_URL =
-            "https://content.guardianapis.com/search?show-tags=contributor&q=Technology&api-key=35dc1c3f-2197-468e-a935-d9a30bc01754";
 
+    /*private static final String REQUEST_URL =
+            "https://content.guardianapis.com/search?show-tags=contributor&q=Technology&api-key=35dc1c3f-2197-468e-a935-d9a30bc01754";*/
+
+    private static final String REQUEST_URL = "https://content.guardianapis.com/search?show-tags=contributor&api-key=35dc1c3f-2197-468e-a935-d9a30bc01754";
+    /**
+     * TextView that is displayed when the list is empty
+     */
+    private TextView mEmptyStateTextView;
     /**
      * Adapter for the list of earthquakes
      */
     private TechNewsAdapter mAdapter;
-
 
 
     @Override
@@ -125,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         mEmptyStateTextView.setText(R.string.no_news);
 
         // Clear the adapter of previous earthquake data
-        //mAdapter.clear();
+        mAdapter.clear();
 
         // If there is a valid list of {@link Earthquake}s, then add them to the adapter's
         // data set. This will trigger the ListView to update.
