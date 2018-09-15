@@ -1,6 +1,5 @@
 package com.example.ajay.newsapp;
 
-import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,7 +8,6 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.app.LoaderManager;
 import android.content.Loader;
-import android.preference.EditTextPreference;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,8 +16,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -29,26 +25,21 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<TechNews>> {
 
     /**
-     * Constant value for the earthquake loader ID. We can choose any integer.
+     * Constant value for the technews loader ID. We can choose any integer.
      * This really only comes into play if you're using multiple loaders.
      */
     private static final int TECHNEWS_LOADER_ID = 1;
+
     /**
      * URL for Guardian news API
      */
-
-    /*private static final String REQUEST_URL =
-            "https://content.guardianapis.com/search?show-tags=contributor&q=Technology&api-key=35dc1c3f-2197-468e-a935-d9a30bc01754";*/
-
-/*
-    private static final String REQUEST_URL = "https://content.guardianapis.com/search?show-tags=contributor&api-key=35dc1c3f-2197-468e-a935-d9a30bc01754";
-*/
-
     private static final String REQUEST_URL = "https://content.guardianapis.com/search?";
+
     /**
      * TextView that is displayed when the list is empty
      */
     private TextView mEmptyStateTextView;
+
     /**
      * Adapter for the list of earthquakes
      */
@@ -63,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Find a reference to the {@link ListView} in the layout
         ListView techNewsListView = (ListView) findViewById(R.id.list);
 
-        // Create a new adapter that takes an empty list of earthquakes as input
+        // Create a new adapter that takes an empty list of news as input
         mAdapter = new TechNewsAdapter(this, new ArrayList<TechNews>());
 
         // Set the adapter on the {@link ListView}
@@ -71,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         techNewsListView.setAdapter(mAdapter);
 
         // Set an item click listener on the ListView, which sends an intent to a web browser
-        // to open a website with more information about the selected earthquake.
+        // to open a website with more information about the selected news.
         techNewsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -81,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 // Convert the String URL into a URI object (to pass into the Intent constructor)
                 Uri newsUri = Uri.parse(currentTechNews.getmWebUrl());
 
-                // Create a new intent to view the earthquake URI
+                // Create a new intent to view the news URI
                 Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
 
                 // Send the intent to launch a new activity
@@ -130,9 +121,14 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         // getString retrieves a String value from the preferences. The second parameter is the default value for this preference.
 
-        String orderBy  = sharedPrefs.getString(
+        String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
                 getString(R.string.settings_order_by_default)
+        );
+
+        String tagBy = sharedPrefs.getString(
+                getString(R.string.settings_tag_by_key),
+                getString(R.string.settings_tag_by_default)
         );
 
         // parse breaks apart the URI string that's passed into its parameter
@@ -141,15 +137,14 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
-        //https://content.guardianapis.com/search?show-tags=contributor&from-date=2010-01-05&api-key=35dc1c3f-2197-468e-a935-d9a30bc01754
         // Append query parameter and its value. For example, the `format=geojson`
         uriBuilder.appendQueryParameter("show-tags", "contributor");
         uriBuilder.appendQueryParameter("order-by", orderBy);
+        uriBuilder.appendQueryParameter("q", tagBy);
         uriBuilder.appendQueryParameter("api-key", "35dc1c3f-2197-468e-a935-d9a30bc01754");
 
-        Log.i("uri",uriBuilder.toString());
+        Log.i("uri", uriBuilder.toString());
 
-        // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
         return new TechNewsLoader(this, uriBuilder.toString());
 
     }
@@ -167,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Clear the adapter of previous earthquake data
         mAdapter.clear();
 
-        // If there is a valid list of {@link Earthquake}s, then add them to the adapter's
+        // If there is a valid list of {@link TechNews}s, then add them to the adapter's
         // data set. This will trigger the ListView to update.
         if (techNews != null && !techNews.isEmpty()) {
             mAdapter.addAll(techNews);

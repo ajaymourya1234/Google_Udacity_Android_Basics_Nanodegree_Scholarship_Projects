@@ -19,5 +19,20 @@
     <string name="settings_order_by_oldest_label">Oldest</string>
     <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
 
+    <string name="settings_tag_by_label">Search By Tag</string>
+    <string name="settings_tag_by_key" translatable="false">tag_by</string>
+    <string name="settings_tag_by_default" translatable="false"> </string>
+
+    <string name="settings_tag_by_tech_label">Technology</string>
+    <string name="settings_tag_by_tech_value" translatable="false">technology</string>
+
+    <string name="settings_tag_by_sports_label">Sports</string>
+    <string name="settings_tag_by_sports_value" translatable="false">sports</string>
+
+    <string name="settings_tag_by_politics_label">Politics</string>
+    <string name="settings_tag_by_politics_value" translatable="false">politics</string>
+
+    <string name="settings_tag_by_envr_label">Environment</string>
+    <string name="settings_tag_by_envr_value" translatable="false">environment</string>
 
 </resources>

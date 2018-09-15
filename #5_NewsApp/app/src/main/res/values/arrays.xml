@@ -11,4 +11,18 @@
         <item>@string/settings_order_by_newest_value</item>
         <item>@string/settings_order_by_oldest_value</item>
     </string-array>
+
+    <string-array name="settings_tag_by_labels">
+        <item>@string/settings_tag_by_tech_label</item>
+        <item>@string/settings_tag_by_sports_label</item>
+        <item>@string/settings_tag_by_politics_label</item>
+        <item>@string/settings_tag_by_envr_label</item>
+    </string-array>
+
+    <string-array name="settings_tag_by_values">
+        <item>@string/settings_tag_by_tech_value</item>
+        <item>@string/settings_tag_by_sports_value</item>
+        <item>@string/settings_tag_by_politics_value</item>
+        <item>@string/settings_tag_by_envr_value</item>
+    </string-array>
 </resources>

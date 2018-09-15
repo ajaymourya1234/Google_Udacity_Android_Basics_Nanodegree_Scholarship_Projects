@@ -105,7 +105,7 @@ public final class QueryUtils {
             Log.e("QueryUtils", "Problem parsing the News JSON results", e);
         }
 
-        // Return the list of earthquakes
+        // Return the list of news
         return techNewsList;
     }
 
@@ -125,10 +125,10 @@ public final class QueryUtils {
             Log.e(LOG_TAG, "Problem making the HTTP request.", e);
         }
 
-        // Extract relevant fields from the JSON response and create a list of {@link Earthquake}s
+        // Extract relevant fields from the JSON response and create a list of {@link TechNews}s
         List<TechNews> techNews = extractFeatureFromJson(jsonResponse);
 
-        // Return the list of {@link Earthquake}s
+        // Return the list of {@link TechNews}s
         return techNews;
     }
 
