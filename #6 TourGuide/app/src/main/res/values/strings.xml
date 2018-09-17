@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_sights">Sights</string>
+    <string name="label_restaurants">Resorts</string>
+    <string name="label_hotels">Hotels</string>
+    <string name="label_cafes">Cafes</string>
+    <string name="hill_station_cafe">Hill Station Cafe</string>
+    <string name="hill_station_cafe_info">Casual, airy cafe with a European menu and weekend breakfast buffet, plus pastries, coffee and wine.</string>
+    <string name="mr_beans">Mr.Beans</string>
+    <string name="mr_beans_info">Chic, elegant and pretty in white, this is a tea parlour meets café, located in the porch of the High Gates Hotel on Church Street. Housed in a quiet corner.</string>
+    <string name="matteo_coffea">Matteo Coffea</string>
+    <string name="mateo_coffea_info">Local branch of a fast food restaurant whipping up burgers, hotdogs and smoked dishes.</string>
+    <string name="art_cafe">Dyu Art Cafe</string>
+    <string name="art_cafe_info">Welcoming cafe and art gallery space serving dishes made from natural ingredients.</string>
+    <string name="bakehouse">Glen\'s Bakehouse</string>
+    <string name="bakehouse_info"><![CDATA[Casual cafe serving variety of eats such as pizzas, sandwiches & pastas, along with sweet treats.]]></string>
+    <string name="om_cafe">Om Made Cafe</string>
+    <string name="om_made_cafe">A globally-influenced menu of green smoothies and light meals, served in a peaceful dining room.</string>
+    <string name="price_hotel">The Pride Hotel Bangalore</string>
+    <string name="tulip_inn">Tulip Inn Bangalore</string>
+    <string name="hotel_ud">Hotel UD Residency, Jayanagar, Bangalore</string>
+    <string name="hotel_royal">Hotel Royal Orchid Bangalore</string>
+    <string name="nandhi">Nandhini Hotels</string>
+    <string name="chancery">The Chancery Pavilion</string>
+    <string name="aura_hotel">Akshaya Aura Hotel</string>
+    <string name="aura_hotel_info">A 12-minute walk from a metro station, this refined hotel is 2 km from the lavish Tipu Sultan\'s Summer Palace and 4 km from Lalbagh Botanical Garden.</string>
+    <string name="royal_orchid"><![CDATA[Royal Orchid Resort & Convention Centre]]></string>
+    <string name="royal_orchid_info">Surrounded by gardens, this polished resort is 14 km from Bangalore Palace and 17 km from the ISKCON Temple Bangalore.</string>
+    <string name="chairman">Chairman’s Resort</string>
+    <string name="chairman_info">Set 1.4 km from Kodigehalli Railway Station, this relaxed hotel in a functional, modern building is 4 km Lumbini Gardens artificial beach and 9 km from Bangalore Palace.</string>
+    <string name="nature_camp">Bannerghatta Nature Camp, Jungle Lodges</string>
+    <string name="nature_camp_info">This relaxed, rural safari lodge lies in a rehabilitation facility for lions and tigers rescued from circuses. It\'s 8 km from both the Bannerghatta Zoo and the Butterfly Park.</string>
+    <string name="richmond">Ramanashree Richmond Hotel</string>
+    <string name="richmond_info">Set in the central neighbourhood of Sampangi Rama Nagara, this vibrant hotel is an 8-minute walk from Sree Kanteerava Stadium and 2.6 km from the Lalbagh Botanical Garden.</string>
+    <string name="rialto">The Rialto Hotel</string>
+    <string name="rialto_info">A 13-minute walk from Nadaprabhu Hiriya Kempegowda Majestic metro station, this upmarket hotel is 15 minutes\' walk from Bengaluru City Junction Railway Station and 2 km from the science centre at the Jawaharlal Nehru Planetarium.</string>
+    <string name="royal">The Royal Comfort</string>
+    <string name="royal_info">On a busy commercial street, this laid-back hotel is a 9-minute walk from the nearest metro stop, 4 km from the 16th-century Nandi Temple and 5 km from Lalbagh Botanical Gardens.</string>
+    <string name="lal_bagh">Lal Bagh</string>
+    <string name="lal_bagh_info">Lalbagh or Lalbagh Botanical Gardens, meaning The Red Garden in English, is a well-known botanical garden in southern Bengaluru, India. It has a famous glass house dating from 1889 which hosts two annual flower shows.</string>
+    <string name="bannerghatta">Bannerghatta National Park</string>
+    <string name="bannerghatta_info">Bannerghatta National Park, near Bangalore, Karnataka, was founded in 1970 and declared as a national park in 1974. In 2002 a portion of the park, became a biological reserve, the Bannerghatta Biological Park.</string>
+    <string name="cubbon_park">Cubbon Park</string>
+    <string name="cubbon">Cubbon Park, Officially called Sri Chamarajendra Park is a landmark \'lung\' area of the Bengaluru city, located within the heart of the city in the Central Administrative Area.</string>
+    <string name="bangalore_palace">Bangalore Palace</string>
+    <string name="bangalore_palace_info">Bangalore Palace, a palace located in Bangalore, Karnataka, India, in an area owned originally by Rev. J. Garrett, the first principal of the Central High School in Bangalore, now famous as Central College.</string>
+    <string name="tippu">Tipu Sultan\'s Summer Palace</string>
+    <string name="tippu_info">Tipu Sultan\'s Summer Palace, in Bangalore, India, is an example of Indo-Islamic architecture and was the summer residence of the Mysorean ruler Tipu Sultan.</string>
+    <string name="iskon">ISKCON Temple Bangalore</string>
+    <string name="iskon_info">Sri Radha Krishna Temple has deities of Radha and Krishna located at Rajajinagar, in North Bangalore, Karnataka, India. It is one of the largest ISKCON temples in the world.</string>
+    <string name="vidhana_soudha">Vidhana Soudha</string>
+    <string name="vidhana_soudha_info">The Vidhana Soudha located in Bengaluru, is the seat of the state legislature of Karnataka. It is constructed in a style sometimes described as Mysore Neo-Dravidian, and incorporates elements of Indo-Saracenic and Dravidian styles.</string>
+    <string name="museum">Visvesvaraya Industrial and Technological Museum</string>
+    <string name="museum_info">The Visvesvaraya Industrial and Technological Museum, Bangalore, India, a constituent unit of the National Council of Science Museums, Ministry of Culture, Government of India, was established in memory of Bharat Ratna Sir M Visvesvaraya.</string>
+
+</resources>
