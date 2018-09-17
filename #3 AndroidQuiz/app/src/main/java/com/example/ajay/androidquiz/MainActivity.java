@@ -83,6 +83,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        RadioGroup rg8 = (RadioGroup) findViewById(R.id.radiogroup8);
+        rg8.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == R.id.q8_radiobutton2) {
+                    ans8 = 1;
+
+                } else {
+                    ans8 = 0;
+
+                }
+            }
+        });
     }
 
     //Evaluating question 5
@@ -115,18 +128,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //Evaluating question 8
-    public void checkboxClicked_8(View view) {
-        CheckBox checkBox1 = (CheckBox) findViewById(R.id.q8_checkbox1);
-        CheckBox checkBox2 = (CheckBox) findViewById(R.id.q8_checkbox2);
-
-        if (!checkBox1.isChecked() && checkBox2.isChecked()) {
-            ans8 = 1;
-
-        } else {
-            ans8 = 0;
-        }
-    }
 
     public void submit(View view) {
 
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         int result = ans1 + ans2 + ans3 + ans4 + ans5 + ans6 + ans7 + ans8;
-        Toast.makeText(MainActivity.this, "You have answered "+ result + " questions correctly",
+        Toast.makeText(MainActivity.this, "You have answered " + result + " questions correctly",
                 Toast.LENGTH_LONG).show();
 
     }

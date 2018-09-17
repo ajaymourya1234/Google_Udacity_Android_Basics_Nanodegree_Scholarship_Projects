@@ -12,55 +12,57 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/material_template"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/material_template" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="12dp"
+                android:layout_centerInParent="true"
+                android:background="#80000000"
                 android:fontFamily="monospace"
                 android:gravity="center_horizontal"
-                android:layout_centerInParent="true"
+                android:padding="12dp"
                 android:text="@string/app_name"
                 android:textColor="#ffffff"
                 android:textSize="28sp"
-                android:textStyle="bold"
-                android:background="#80000000"/>
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
 
         <TextView
+            style="@style/OptionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hi"
             android:layout_marginLeft="8dp"
-            style="@style/OptionTheme" />
+            android:text="@string/hi" />
 
         <TextView
+            style="@style/OptionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/info"
             android:layout_marginLeft="8dp"
-            style="@style/OptionTheme"/>
+            android:text="@string/info" />
 
         <LinearLayout
+            style="@style/CardTheme"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/CardTheme">
+            android:layout_height="wrap_content">
 
             <TextView
+                style="@style/QuestionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question1"
-                style="@style/QuestionTheme" />
+                android:text="@string/question1" />
 
             <RadioGroup
                 android:id="@+id/radiogroup1"
@@ -70,44 +72,44 @@
 
                 <RadioButton
                     android:id="@+id/q1_radiobutton1"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1_option1"
-                    style="@style/OptionTheme"/>
+                    android:text="@string/q1_option1" />
 
                 <RadioButton
                     android:id="@+id/q1_radiobutton2"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1_option2"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q1_option2" />
 
                 <RadioButton
                     android:id="@+id/q1_radiobutton3"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1_option3"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q1_option3" />
 
                 <RadioButton
                     android:id="@+id/q1_radiobutton4"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1_option4"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q1_option4" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
+            style="@style/CardTheme"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/CardTheme">
+            android:layout_height="wrap_content">
 
             <TextView
+                style="@style/QuestionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question2"
-                style="@style/QuestionTheme"/>
+                android:text="@string/question2" />
 
             <RadioGroup
                 android:id="@+id/radiogroup2"
@@ -117,44 +119,44 @@
 
                 <RadioButton
                     android:id="@+id/q2_radiobutton1"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2_option1"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q2_option1" />
 
                 <RadioButton
                     android:id="@+id/q2_radiobutton2"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2_option2"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q2_option2" />
 
                 <RadioButton
                     android:id="@+id/q2_radiobutton3"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2_option3"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q2_option3" />
 
                 <RadioButton
                     android:id="@+id/q2_radiobutton4"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2_option4"
-                    style="@style/OptionTheme"/>
+                    android:text="@string/q2_option4" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
+            style="@style/CardTheme"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/CardTheme">
+            android:layout_height="wrap_content">
 
             <TextView
+                style="@style/QuestionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question3"
-                style="@style/QuestionTheme"/>
+                android:text="@string/question3" />
 
             <RadioGroup
                 android:id="@+id/radiogroup3"
@@ -164,44 +166,44 @@
 
                 <RadioButton
                     android:id="@+id/q3_radiobutton1"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q3_option1"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q3_option1" />
 
                 <RadioButton
                     android:id="@+id/q3_radiobutton2"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q3_option2"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q3_option2" />
 
                 <RadioButton
                     android:id="@+id/q3_radiobutton3"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q3_option3"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q3_option3" />
 
                 <RadioButton
                     android:id="@+id/q3_radiobutton4"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q3_option4"
-                    style="@style/OptionTheme"/>
+                    android:text="@string/q3_option4" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
+            style="@style/CardTheme"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/CardTheme">
+            android:layout_height="wrap_content">
 
             <TextView
+                style="@style/QuestionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question4"
-                style="@style/QuestionTheme"/>
+                android:text="@string/question4" />
 
             <RadioGroup
                 android:id="@+id/radiogroup4"
@@ -211,135 +213,135 @@
 
                 <RadioButton
                     android:id="@+id/q4_radiobutton1"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q4_option1"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q4_option1" />
 
                 <RadioButton
                     android:id="@+id/q4_radiobutton2"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q4_option2"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q4_option2" />
 
                 <RadioButton
                     android:id="@+id/q4_radiobutton3"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q4_option3"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q4_option3" />
 
                 <RadioButton
                     android:id="@+id/q4_radiobutton4"
+                    style="@style/OptionTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/q4_option4"
-                    style="@style/OptionTheme" />
+                    android:text="@string/q4_option4" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
+            style="@style/CardTheme"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/CardTheme">
+            android:layout_height="wrap_content">
 
             <TextView
+                style="@style/QuestionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question5"
-                style="@style/QuestionTheme" />
+                android:text="@string/question5" />
 
 
             <CheckBox
                 android:id="@+id/q5_checkbox1"
+                style="@style/OptionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="checkboxClicked_5"
-                android:text="@string/q5_option1"
-                style="@style/OptionTheme" />
+                android:text="@string/q5_option1" />
 
             <CheckBox
                 android:id="@+id/q5_checkbox2"
+                style="@style/OptionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="checkboxClicked_5"
-                android:text="@string/q5_option2"
-                style="@style/OptionTheme"/>
+                android:text="@string/q5_option2" />
 
             <CheckBox
                 android:id="@+id/q5_checkbox3"
+                style="@style/OptionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="checkboxClicked_5"
-                android:text="@string/q5_option3"
-                style="@style/OptionTheme"/>
+                android:text="@string/q5_option3" />
 
             <CheckBox
                 android:id="@+id/q5_checkbox4"
+                style="@style/OptionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="checkboxClicked_5"
-                android:text="@string/q5_option4"
-                style="@style/OptionTheme" />
+                android:text="@string/q5_option4" />
         </LinearLayout>
 
         <LinearLayout
+            style="@style/CardTheme"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/CardTheme">
+            android:layout_height="wrap_content">
 
             <TextView
+                style="@style/QuestionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question6"
-                style="@style/QuestionTheme"/>
+                android:text="@string/question6" />
 
 
             <CheckBox
                 android:id="@+id/q6_checkbox1"
+                style="@style/OptionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="checkboxClicked_6"
-                android:text="@string/q6_option1"
-                style="@style/OptionTheme" />
+                android:text="@string/q6_option1" />
 
             <CheckBox
                 android:id="@+id/q6_checkbox2"
+                style="@style/OptionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="checkboxClicked_6"
-                android:text="@string/q6_option2"
-                style="@style/OptionTheme" />
+                android:text="@string/q6_option2" />
 
             <CheckBox
                 android:id="@+id/q6_checkbox3"
+                style="@style/OptionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="checkboxClicked_6"
-                android:text="@string/q6_option3"
-                style="@style/OptionTheme" />
+                android:text="@string/q6_option3" />
 
             <CheckBox
                 android:id="@+id/q6_checkbox4"
+                style="@style/OptionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="checkboxClicked_6"
-                android:text="@string/q6_option4"
-                style="@style/OptionTheme"/>
+                android:text="@string/q6_option4" />
         </LinearLayout>
 
         <LinearLayout
+            style="@style/CardTheme"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/CardTheme">
+            android:layout_height="wrap_content">
 
             <TextView
+                style="@style/QuestionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/question7"
-                style="@style/QuestionTheme"/>
+                android:text="@string/question7" />
 
             <EditText
                 android:id="@+id/edittext"
@@ -351,32 +353,38 @@
         </LinearLayout>
 
         <LinearLayout
+            style="@style/CardTheme"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/CardTheme">
+            android:layout_height="wrap_content">
 
             <TextView
+                style="@style/QuestionTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/question8"
-                style="@style/QuestionTheme"/>
+                android:text="@string/question8" />
 
 
-            <CheckBox
-                android:id="@+id/q8_checkbox1"
+            <RadioGroup
+                android:id="@+id/radiogroup8"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="checkboxClicked_8"
-                android:text="@string/q8_option1"
-                style="@style/OptionTheme" />
+                android:layout_height="match_parent"
+                android:padding="6dp">
 
-            <CheckBox
-                android:id="@+id/q8_checkbox2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="checkboxClicked_8"
-                android:text="@string/q8_option2"
-                style="@style/OptionTheme" />
+                <RadioButton
+                    android:id="@+id/q8_radiobutton1"
+                    style="@style/OptionTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q8_option1" />
+
+                <RadioButton
+                    android:id="@+id/q8_radiobutton2"
+                    style="@style/OptionTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q8_option2" />
+
+            </RadioGroup>
 
         </LinearLayout>
 
