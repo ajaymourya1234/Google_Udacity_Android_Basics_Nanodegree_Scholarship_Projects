@@ -46,4 +46,9 @@ Topics covered in the Nanodegree program:
 
 ![ezgif com-video-to-gif 1](https://user-images.githubusercontent.com/33999538/45613626-8f741900-ba84-11e8-92ec-84b2c3c4b7d9.gif)
 
+## #6: News App
+**Project Description:** Create an app to display recent news stories on a topic of your choice using a web API.  
+**Android Tags:** *#jsonparsing #HTTPnetworking #threads #parallelism #recyclerview*  
+**Personal Comment** *For the first time I fetched data from the net through API and displayed it on the Activity and also added prefernces for fetching the data.
+
 
