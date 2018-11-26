@@ -39,7 +39,7 @@ Topics covered in the Nanodegree program:
 
 ![music app video-to-gif](https://user-images.githubusercontent.com/33999538/45612158-c3007480-ba7f-11e8-8e8e-888b17c4a4f9.gif)
 
-## #6: Tour Guide App
+## #5: Tour Guide App
 **Project Description:** Create an app to guide a user around a city or location of your choice!  
 **Android Tags:** *#multiscreen #listview #navigationdrawer #App bars*  
 **Personal Comment:** **  
