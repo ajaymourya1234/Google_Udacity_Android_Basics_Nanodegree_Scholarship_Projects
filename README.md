@@ -46,6 +46,8 @@ Topics covered in the Nanodegree program:
 
 ![ezgif com-video-to-gif 1](https://user-images.githubusercontent.com/33999538/45613626-8f741900-ba84-11e8-92ec-84b2c3c4b7d9.gif)
 
+![tour guide gif](https://user-images.githubusercontent.com/33999538/49021115-ecdcc280-f1b7-11e8-91df-b4c2acbfd671.gif)
+
 ## #6: News App
 **Project Description:** Create an app to display recent news stories on a topic of your choice using a web API.  
 **Android Tags:** *#jsonparsing #HTTPnetworking #threads #parallelism #recyclerview*  
