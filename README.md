@@ -52,7 +52,7 @@ Topics covered in the Nanodegree program:
 **Personal Comment** *For the first time I fetched data from the net through API and displayed it on the Activity and also added prefernces for fetching the data.*
 
 
-## #10: Inventory App
+## #7: Inventory App
 **Project Description:** Create an app to track the inventory of a retail store, including current stock and supplier information.  
 **Android Tags:** *#sqlite #contractclass #cursor #contentprovider#cursorloader*  
 **Personal Comment** *Learned the use of SQlite database and how it can be used to store data and how apps share data through Content Providers*
