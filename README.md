@@ -42,7 +42,7 @@ Topics covered in the Nanodegree program:
 ## #5: Tour Guide App
 **Project Description:** Create an app to guide a user around a city or location of your choice!  
 **Android Tags:** *#multiscreen #listview #navigationdrawer #App bars*  
-**Personal Comment:** **  
+**Personal Comment:** *A simple App demonstrating the use Navigation drawer and Fragments*  
 
 ![ezgif com-video-to-gif 1](https://user-images.githubusercontent.com/33999538/45613626-8f741900-ba84-11e8-92ec-84b2c3c4b7d9.gif)
 
