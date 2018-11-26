@@ -58,3 +58,4 @@ Topics covered in the Nanodegree program:
 **Android Tags:** *#sqlite #contractclass #cursor #contentprovider#cursorloader*  
 **Personal Comment** *Learned the use of SQlite database and how it can be used to store data and how apps share data through Content Providers*
 
+![inventory app gif](https://user-images.githubusercontent.com/33999538/49021021-bf901480-f1b7-11e8-9563-e5c7f4b8db7e.gif)
