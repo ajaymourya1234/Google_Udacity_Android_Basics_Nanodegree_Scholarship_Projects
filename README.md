@@ -51,6 +51,7 @@ Topics covered in the Nanodegree program:
 **Android Tags:** *#jsonparsing #HTTPnetworking #threads #parallelism #recyclerview*  
 **Personal Comment** *For the first time I fetched data from the net through API and displayed it on the Activity and also added prefernces for fetching the data.*
 
+![news app gif](https://user-images.githubusercontent.com/33999538/49020827-5a3c2380-f1b7-11e8-9739-6058d6b0b7bb.
 
 ## #7: Inventory App
 **Project Description:** Create an app to track the inventory of a retail store, including current stock and supplier information.  
